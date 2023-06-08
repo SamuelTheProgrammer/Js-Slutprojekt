@@ -1,0 +1,32 @@
+/* Detta är en stil för att centrera knapparna */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#buttons_div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin-top: 30px;
+    text-align: center;
+}
+/* Detta ändrar bakgrundfärgen med mer */
+.allbuttons { 
+    background-color: lightblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Knapparna ändrar färg när muspekaren hålls över dem */
+.allbuttons:hover {
+    background-color: black;
+}

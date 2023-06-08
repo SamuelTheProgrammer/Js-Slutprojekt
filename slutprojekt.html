@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slutprojekt.css">
+    <style>
+
+        @media (max-width: 768px) { /* Ändrar storleken för mindre skärmar */
+            #buttons_div {
+                width: 90%;
+            }
+
+            .allbuttons { /* Ändrar så att det tar upp hela skärmen för mindre skärmar */
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div>
+        <h1 id="h1"></h1>
+    </div>
+    
+    <img src="H2.png" height="25%" width="12%" id="image">
+
+    <div id="buttons_div">
+        <div>
+            <button class="allbuttons" onclick="changeBackground()">Change Background</button> <!-- En knapp som ändrar bakgrundsfärgen genom funktionen changeBackground() -->
+            <button class="allbuttons" onclick="changeImage()">Change Image</button> <!-- En knapp som ändrar bilden med funktionen changeImage() -->
+            <button class="allbuttons" onclick="hideImage()">Hide Image</button> <!-- En knapp som använder funktionen hideImage() för att gömma bilden -->
+        </div>
+
+        <div>
+            <button class="allbuttons" onclick="showImage()">Show Image</button> <!-- En knapp som visar bilden med showImage() -->
+            <button class="allbuttons" onclick="changeHeader()">Change Header</button> <!-- En knapp som ändrar rubriken med hjälp av funktionen changeHeader() -->
+            <button class="allbuttons" onclick="removeHeader()">Remove Header</button> <!-- En knapp som tar bort rubriken med funktionen removeHeader() -->
+            
+        </div>
+    </div>
+<!-- Hämtar javascript koden-->
+    <script src="slutprojekt.js"></script>
+</body>
+</html>
